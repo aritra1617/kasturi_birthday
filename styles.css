@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Manrope', sans-serif;
     overflow: hidden;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
     background-size: 400% 400%;
@@ -165,17 +165,18 @@ canvas {
     animation: slideIn 1.5s ease-out;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 /* Main Title */
 .main-title {
+    font-family: 'Fraunces', serif;
     font-size: 72px;
-    font-weight: bold;
+    font-weight: 800;
     color: white;
     text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3), 
                  6px 6px 20px rgba(0, 0, 0, 0.2);
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     margin-bottom: 20px;
     display: inline-block;
     animation: titleShine 3s ease-in-out infinite;
@@ -219,6 +220,7 @@ canvas {
     margin-bottom: 40px;
     animation: slideIn 1.5s ease-out;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    font-weight: 500;
 }
 
 @keyframes slideIn {
