@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Archives for Kosto 📷</title>
+    <link rel="stylesheet" href="archive-styles.css">
+</head>
+<body>
+    <canvas id="confetti-canvas"></canvas>
+    
+    <div class="archive-container">
+        <button class="back-btn" onclick="goBack()">← Back to Birthday</button>
+        
+        <div class="content">
+            <h1 class="archive-title">💌 Moments with Kosto 💌</h1>
+            <p class="archive-subtitle">A collection of beautiful memories</p>
+            
+            <div class="archive-gallery">
+                <!-- Previous Birthdays -->
+                <div class="archive-year">
+                    <h2>Previous Birthday Memories 📚</h2>
+                    <div class="gallery-grid">
+                        <div class="memory-card">
+                            <div class="memory-media">
+                                <div class="video-loading">
+                                    <div class="spinner"></div>
+                                    <p>Loading memory...</p>
+                                </div>
+                                <iframe id="video1" src="https://drive.google.com/file/d/1NVl0b0x6ae9Alh4y3rzjT5GUr0om_tx7/preview" frameborder="0" allowfullscreen onload="hideLoading('video1')"></iframe>
+                            </div>
+                            <div class="memory-details">
+                                <h3>Birthday Memory 1</h3>
+                                <p>A special moment from the past</p>
+                                <a href="https://drive.google.com/file/d/1NVl0b0x6ae9Alh4y3rzjT5GUr0om_tx7/view?usp=sharing" target="_blank" class="drive-link">📹 View on Google Drive</a>
+                            </div>
+                        </div>
+
+                        <div class="memory-card">
+                            <div class="memory-media">
+                                <div class="video-loading">
+                                    <div class="spinner"></div>
+                                    <p>Loading memory...</p>
+                                </div>
+                                <iframe id="video2" src="https://drive.google.com/file/d/1NVl0b0x6ae9Alh4y3rzjT5GUr0om_tx7/preview" frameborder="0" allowfullscreen onload="hideLoading('video2')"></iframe>
+                            </div>
+                            <div class="memory-details">
+                                <h3>Birthday Memory 2</h3>
+                                <p>Cherished birthday moments</p>
+                                <a href="https://drive.google.com/file/d/1NVl0b0x6ae9Alh4y3rzjT5GUr0om_tx7/view?usp=sharing" target="_blank" class="drive-link">📹 View on Google Drive</a>
+                            </div>
+                        </div>
+
+                        <div class="memory-card">
+                            <div class="memory-media">
+                                <div class="video-loading">
+                                    <div class="spinner"></div>
+                                    <p>Loading memory...</p>
+                                </div>
+                                <iframe id="video3" src="https://drive.google.com/file/d/1zxFZMIvrwwz8PJjJ_7oJjG7HsvunZCht/preview" frameborder="0" allowfullscreen onload="hideLoading('video3')"></iframe>
+                            </div>
+                            <div class="memory-details">
+                                <h3>Birthday Memory 3</h3>
+                                <p>More beautiful memories</p>
+                                <a href="https://drive.google.com/file/d/1zxFZMIvrwwz8PJjJ_7oJjG7HsvunZCht/view?usp=sharing" target="_blank" class="drive-link">📹 View on Google Drive</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Coming Soon Section -->
+                <div class="archive-year">
+                    <h2>💝 More Memories to Come... 💝</h2>
+                    <p class="coming-soon">Every birthday brings new moments to cherish and remember forever!</p>
+                </div>
+            </div>
+            
+            <div class="info-box">
+                <h3>📌 How to Add Your Memories</h3>
+                <p>Share your favorite photos, videos, and moments! Contact to add your memories to this archive.</p>
+                <p style="margin-top: 15px; font-size: 14px; color: #999;">Each memory is a treasure that makes the journey more beautiful. 🌟</p>
+            </div>
+            
+            <button class="celebrate-btn" onclick="celebrateArchive()">💖 Celebrate All Moments! 💖</button>
+        </div>
+    </div>
+    
+    <script src="archive-script.js"></script>
+</body>
+</html>
