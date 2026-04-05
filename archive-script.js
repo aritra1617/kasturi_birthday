@@ -182,22 +182,12 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Hide loading spinner when video loads
-function hideLoading(videoId) {
-    const loadingEl = document.querySelector(`#${videoId}`).parentElement.querySelector('.video-loading');
-    if (loadingEl) {
-        loadingEl.style.opacity = '0';
-        loadingEl.style.pointerEvents = 'none';
-        setTimeout(() => {
-            loadingEl.style.display = 'none';
-        }, 300);
-    }
-}
-
-// Set timeout to hide loading if videos take too long
-setTimeout(() => {
-    ['video1', 'video2', 'video3'].forEach(id => hideLoading(id));
-}, 8000);
+// Auto confetti on load
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        confettiManager.createConfetti(30);
+    }, 600);
+});
 
 // Press 'c' for confetti
 document.addEventListener('keydown', (e) => {
